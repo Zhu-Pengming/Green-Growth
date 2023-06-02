@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawActivity1">
+
+    <FrameLayout
+        android:id="@+id/draw_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="549dp"
+        tools:ignore="NotSibling">
+
+        <ImageView
+            android:id="@+id/draw_1"
+            android:layout_width="match_parent"
+            android:layout_height="586dp"
+            android:src="@drawable/ic_image_add"
+            tools:ignore="MissingConstraints" />
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/draw_frame_layout"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="87dp">
+
+            <Button
+                android:id="@+id/re_draw1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/draw_redraw"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/store1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/draw_save"
+                android:textSize="30sp" />
+
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:percent="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsFragment">
+
+    <Switch
+        android:id="@+id/bt_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switch_language_text"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AboutUs"
+        android:layout_centerHorizontal="true"
+        android:textSize="60sp"></TextView>
+    <ImageView
+        android:id="@+id/imageView_about"
+        android:layout_width="200sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/about_title"
+        percent:srcCompat="@drawable/ic_icon" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_about"
+        android:layout_centerHorizontal="true"
+        android:text="1.0"
+        android:textSize="25sp"></TextView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/version"
+        android:layout_marginTop="10sp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/text_develop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developed By"
+                android:textSize="40sp"/>
+
+            <TextView
+                android:id="@+id/android_developer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_develop"
+                android:layout_centerHorizontal="true"
+                android:text="Zhu Pengming"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/open_developer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Li Qincheng "
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/android_developer"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/open_developer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/open_developer1"
+                android:layout_centerHorizontal="true"
+                android:text="Li Zherrui"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/android_developer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Shen Yiyang"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/open_developer2"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_1"
+        android:layout_marginTop="10sp">
+
+        <TextView
+            android:id="@+id/contacts_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120sp"
+            android:layout_marginBottom="30sp"
+            android:text="@string/contacts_title"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_web"
+                    android:layout_width="120sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/ic_web" />
+                <ImageView
+                    android:id="@+id/img_email"
+                    android:layout_width="120sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/ic_email" />
+
+                <ImageView
+                    android:id="@+id/img_facebook"
+                    android:layout_width="100sp"
+                    android:layout_height="90sp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/ic_facebook" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_web"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/text_web"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/text_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40sp"
+                    android:text="@string/text_email"
+                    android:textSize="25sp"/>
+
+
+                <TextView
+                    android:id="@+id/text_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40sp"
+                    android:text="@string/text_facebook"
+                    android:textSize="25sp"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!-- Copyright -->
+    <TextView
+        android:layout_width="450sp"
+        android:layout_height="100sp"
+        android:text="Copyright  2023 - APD SKEG Pte Ltd. All rights reserved."
+        android:layout_marginTop="5sp"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/card_2"/>
+</RelativeLayout>
