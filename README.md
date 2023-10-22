@@ -45,7 +45,8 @@ The Plant Growth Monitor is an open-source Android application developed to help
    The Plant Growth Monitor app shows promise in measuring plant heights, but ongoing efforts are focused on refining object detection algorithms and exploring advanced techniques such as machine learning to enhance accuracy.
 
 ## License
-    This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
      We appreciate the open-source community and the contributors who help improve and enhance the Plant Growth Monitor app.
