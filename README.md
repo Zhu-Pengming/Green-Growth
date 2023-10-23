@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
-The Plant Growth Monitor is an open-source Android application developed to help users easily track and record the growth of their plants. By leveraging image processing techniques and the OpenCV library, the app provides a convenient way to monitor plant height using a smartphone camera. The goal is to offer users a user-friendly tool for evaluating plant growth, contributing to botanical research, and supporting practical applications.
+The Green Growth Tracker is an open-source Android application developed to help users easily track and record the growth of their plants. By leveraging image processing techniques and the OpenCV library, the app provides a convenient way to monitor plant height using a smartphone camera. The goal is to offer users a user-friendly tool for evaluating plant growth, contributing to botanical research, and supporting practical applications.
 
 ## Features
 # Automated Measurement: 
