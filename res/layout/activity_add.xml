@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddArchiveActivity"
+    android:padding="20dp">
+
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="@string/add_name"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/var_input"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/name_input"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:hint="@string/add_species"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/height_input"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/var_input"
+        android:layout_marginTop="-2dp"
+        android:ems="10"
+        android:hint="@string/add_height"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageView_add"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/height_input"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_image_add"/>
+
+    <TextView
+        android:id="@+id/text_add_pic"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageView_add"
+        android:layout_marginTop="30dp"
+        android:text="@string/add_pic"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/add_ADD"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@id/text_add_pic"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
