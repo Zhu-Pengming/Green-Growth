@@ -34,10 +34,6 @@ The Green Growth Tracker is an open-source Android application developed to help
 # Data Storage: 
   Consistent results are saved to the database, ensuring accurate data storage for future reference.
 
-## Development Environment
-   Android Studio Version: 2022.2.1
-   Libraries Used: SQLiteOpenHelper for database management, OpenCV for image processing.
-
 ## Contributing
    We welcome contributions from the community! If you're interested in contributing to the Plant Growth Monitor project, please refer to our Contribution Guidelines.
 
